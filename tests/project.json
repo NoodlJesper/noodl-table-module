@@ -2,612 +2,2143 @@
     "name": "Table Module dev",
     "components": [
         {
-            "name": "/My Table",
+            "name": "/Product Table/Product Table",
             "id": "3936da2d-21f6-20ea-0911-2a4ae18c68bf",
             "graph": {
-                "connections": [],
+                "connections": [
+                    {
+                        "fromId": "ba47a99d-0f77-4a91-00ec-7ff219b3197d",
+                        "fromProperty": "Items",
+                        "toId": "9ed92ec1-30b3-30a5-3948-954da31aac55",
+                        "toProperty": "Items"
+                    }
+                ],
                 "roots": [
                     {
-                        "id": "e8570140-710c-df7f-2314-faa1656a4f9c",
-                        "type": "Group",
-                        "x": 355,
-                        "y": 278,
-                        "parameters": {},
+                        "id": "1e148e2a-2809-63dc-b397-85dffa466dc0",
+                        "type": "CSS Definition",
+                        "x": 663.489036733245,
+                        "y": 346.26788963268154,
+                        "parameters": {
+                            "style": "thead {\n    background-color: grey;\n}\n\nth > div, td > div {\n    position: static !important;\n}\n"
+                        },
                         "ports": [],
+                        "dynamicports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "e07f9c10-387c-ca3f-199d-ba1888f324e3",
+                        "type": "Group",
+                        "label": "Product Table",
+                        "x": 376.8841622533462,
+                        "y": 283.8664823082413,
+                        "parameters": {
+                            "sizeMode": "contentHeight"
+                        },
+                        "ports": [],
+                        "dynamicports": [],
                         "children": [
                             {
                                 "id": "b3e949e2-fd5b-a460-2fcb-1e2bb62ce36f",
                                 "type": "Table",
                                 "x": 20,
-                                "y": 46,
-                                "parameters": {},
+                                "y": 59,
+                                "parameters": {
+                                    "borderSpacing": "0"
+                                },
                                 "ports": [],
+                                "dynamicports": [],
                                 "children": [
                                     {
-                                        "id": "f217a1ce-d887-e8cb-1aa0-6606a3bef418",
-                                        "type": "Table Head",
+                                        "id": "e884124d-5f95-fbdc-c5c4-634c3f1df878",
+                                        "type": "/Product Table/Product Table Header",
                                         "x": 20,
                                         "y": 46,
                                         "parameters": {},
                                         "ports": [],
-                                        "children": [
-                                            {
-                                                "id": "96a7c595-46af-5cb2-33ba-bf451d83a832",
-                                                "type": "/My Table Header Component",
-                                                "x": 512.321926603799,
-                                                "y": 384.0680265653078,
-                                                "parameters": {},
-                                                "ports": [],
-                                                "children": []
-                                            }
-                                        ]
+                                        "dynamicports": [],
+                                        "children": []
                                     },
                                     {
-                                        "id": "ac5c53fb-f021-fd45-7837-db16b50ca594",
-                                        "type": "Table Body",
+                                        "id": "9ed92ec1-30b3-30a5-3948-954da31aac55",
+                                        "type": "/Product Table/Product Table Items",
                                         "x": 20,
-                                        "y": 138,
+                                        "y": 92,
                                         "parameters": {},
                                         "ports": [],
-                                        "children": [
-                                            {
-                                                "id": "a7025b90-f723-4b5f-7c34-d3487d486e8f",
-                                                "type": "/My Table Row Component",
-                                                "x": 20,
-                                                "y": 46,
-                                                "parameters": {},
-                                                "ports": [],
-                                                "children": []
-                                            },
-                                            {
-                                                "id": "77f3cd4e-0f17-c433-3688-4eedf4eabb29",
-                                                "type": "/My Table Row Component",
-                                                "x": 451.5314401839929,
-                                                "y": 1029.6301448903425,
-                                                "parameters": {},
-                                                "ports": [],
-                                                "children": []
-                                            },
-                                            {
-                                                "id": "fc88811b-b327-0264-c39b-5a7ea63ca776",
-                                                "type": "/My Table Row Component",
-                                                "x": 434.90229033248113,
-                                                "y": 1038.5843025026952,
-                                                "parameters": {},
-                                                "ports": [],
-                                                "children": []
-                                            },
-                                            {
-                                                "id": "599e77c4-5319-3ab0-6216-5b1da5b6fb31",
-                                                "type": "/My Table Row Component",
-                                                "x": 20,
-                                                "y": 226,
-                                                "parameters": {},
-                                                "ports": [],
-                                                "children": []
-                                            },
-                                            {
-                                                "id": "fddf0730-9434-08b6-c72b-8bbaffbcdfe6",
-                                                "type": "Table Row",
-                                                "x": 20,
-                                                "y": 286,
-                                                "parameters": {},
-                                                "ports": [],
-                                                "children": [
-                                                    {
-                                                        "id": "58c9bfb1-b967-780f-4f2a-5076a6752976",
-                                                        "type": "Table Cell",
-                                                        "x": 20,
-                                                        "y": 46,
-                                                        "parameters": {
-                                                            "rowspan": 1,
-                                                            "colspan": 2
-                                                        },
-                                                        "ports": [],
-                                                        "children": [
-                                                            {
-                                                                "id": "8b3bd8ad-4e37-01fd-be7e-77b306b71f68",
-                                                                "type": "Group",
-                                                                "x": 586,
-                                                                "y": 368,
-                                                                "parameters": {
-                                                                    "flexDirection": "row"
-                                                                },
-                                                                "ports": [],
-                                                                "children": [
-                                                                    {
-                                                                        "id": "608b2894-eabc-eca4-bead-8655528d774b",
-                                                                        "type": "Image",
-                                                                        "x": 606,
-                                                                        "y": 414,
-                                                                        "parameters": {
-                                                                            "src": "noodl-logo.png",
-                                                                            "sizeMode": "explicit",
-                                                                            "width": {
-                                                                                "value": 24,
-                                                                                "unit": "px"
-                                                                            },
-                                                                            "height": {
-                                                                                "value": 24,
-                                                                                "unit": "px"
-                                                                            }
-                                                                        },
-                                                                        "ports": [],
-                                                                        "children": []
-                                                                    },
-                                                                    {
-                                                                        "id": "cccde026-5db5-3514-6487-76de2cc23218",
-                                                                        "type": "Text",
-                                                                        "x": 606,
-                                                                        "y": 460,
-                                                                        "parameters": {
-                                                                            "text": "cell",
-                                                                            "style": "/* example:\n{\n\tbackgroundColor: 'red'\n}\n*/\n\n{\n    position: \"static\"\n}"
-                                                                        },
-                                                                        "ports": [],
-                                                                        "children": []
-                                                                    }
-                                                                ]
-                                                            }
-                                                        ]
-                                                    },
-                                                    {
-                                                        "id": "0ec92a7e-213f-1bf6-1cc5-4c4c28c9872b",
-                                                        "type": "Table Cell",
-                                                        "x": 20,
-                                                        "y": 230,
-                                                        "parameters": {
-                                                            "colspan": 1
-                                                        },
-                                                        "ports": [],
-                                                        "children": [
-                                                            {
-                                                                "id": "6fac4ee9-1ea3-e608-69ce-d3760c3656f9",
-                                                                "type": "Group",
-                                                                "x": 586,
-                                                                "y": 736,
-                                                                "parameters": {
-                                                                    "flexDirection": "row"
-                                                                },
-                                                                "ports": [],
-                                                                "children": [
-                                                                    {
-                                                                        "id": "b0b42704-720d-9232-cab7-3aba143fbbf8",
-                                                                        "type": "Image",
-                                                                        "x": 606,
-                                                                        "y": 782,
-                                                                        "parameters": {
-                                                                            "src": "noodl-logo.png",
-                                                                            "sizeMode": "explicit",
-                                                                            "width": {
-                                                                                "value": 24,
-                                                                                "unit": "px"
-                                                                            },
-                                                                            "height": {
-                                                                                "value": 24,
-                                                                                "unit": "px"
-                                                                            }
-                                                                        },
-                                                                        "ports": [],
-                                                                        "children": []
-                                                                    },
-                                                                    {
-                                                                        "id": "ae78bef9-bbd4-1f26-d229-d18b7fa0406a",
-                                                                        "type": "Text",
-                                                                        "x": 606,
-                                                                        "y": 828,
-                                                                        "parameters": {
-                                                                            "text": "cell",
-                                                                            "style": "/* example:\n{\n\tbackgroundColor: 'red'\n}\n*/\n\n{\n    position: \"static\"\n}"
-                                                                        },
-                                                                        "ports": [],
-                                                                        "children": []
-                                                                    }
-                                                                ]
-                                                            }
-                                                        ]
-                                                    }
-                                                ]
-                                            }
-                                        ]
+                                        "dynamicports": [],
+                                        "children": []
                                     }
                                 ]
                             }
                         ]
                     },
                     {
-                        "id": "1e148e2a-2809-63dc-b397-85dffa466dc0",
-                        "type": "CSS Definition",
-                        "x": 782.489036733245,
-                        "y": 423.27712953302193,
-                        "parameters": {
-                            "style": "\n\nthead {\n    background-color: grey;\n}\n\nth > div, td > div {\n    position: static !important ;\n}\n"
-                        },
-                        "ports": [],
+                        "id": "ba47a99d-0f77-4a91-00ec-7ff219b3197d",
+                        "type": "Component Inputs",
+                        "x": -1.8533986051927798,
+                        "y": 402.31492259417075,
+                        "parameters": {},
+                        "ports": [
+                            {
+                                "name": "Items",
+                                "plug": "output",
+                                "type": {
+                                    "name": "*"
+                                },
+                                "index": 1
+                            }
+                        ],
+                        "dynamicports": [],
                         "children": []
                     }
                 ]
             }
         },
         {
-            "name": "/My Table Row Component",
+            "name": "/Product Table/Product Table Item",
             "id": "34b5f2f7-ec30-b057-3660-e93e375c2e40",
             "graph": {
-                "connections": [],
+                "connections": [
+                    {
+                        "fromId": "e11ce592-5078-9882-2297-87a12f60bf5c",
+                        "fromProperty": "itemId",
+                        "toId": "f42bf9ac-6893-8e58-18e9-994c0436a298",
+                        "toProperty": "modelId"
+                    },
+                    {
+                        "fromId": "f42bf9ac-6893-8e58-18e9-994c0436a298",
+                        "fromProperty": "id",
+                        "toId": "658c85c0-9f18-3ced-e41c-d9971c8adf49",
+                        "toProperty": "objectId"
+                    },
+                    {
+                        "fromId": "bad86143-23d5-1011-fa61-2ec460ab305d",
+                        "fromProperty": "didMount",
+                        "toId": "658c85c0-9f18-3ced-e41c-d9971c8adf49",
+                        "toProperty": "generate"
+                    },
+                    {
+                        "fromId": "84cb0927-815e-5aa9-c034-693f08c3061e",
+                        "fromProperty": "items",
+                        "toId": "658c85c0-9f18-3ced-e41c-d9971c8adf49",
+                        "toProperty": "columns"
+                    },
+                    {
+                        "fromId": "84cb0927-815e-5aa9-c034-693f08c3061e",
+                        "fromProperty": "modified",
+                        "toId": "658c85c0-9f18-3ced-e41c-d9971c8adf49",
+                        "toProperty": "generate"
+                    },
+                    {
+                        "fromId": "658c85c0-9f18-3ced-e41c-d9971c8adf49",
+                        "fromProperty": "cells",
+                        "toId": "0503f6f6-e4a3-1179-cb2b-ae8fdb71d67a",
+                        "toProperty": "items"
+                    }
+                ],
                 "roots": [
                     {
-                        "id": "34a88a16-0ce2-e468-6955-f91d8eebbc0d",
+                        "id": "bad86143-23d5-1011-fa61-2ec460ab305d",
                         "type": "Table Row",
-                        "x": 546,
-                        "y": 276,
+                        "x": 520.3205171627097,
+                        "y": 201.21125937715564,
                         "parameters": {},
                         "ports": [],
+                        "dynamicports": [],
                         "children": [
                             {
-                                "id": "4ddab7da-aee2-04f0-ac43-ec5847ae06c5",
-                                "type": "Table Cell",
+                                "id": "0503f6f6-e4a3-1179-cb2b-ae8fdb71d67a",
+                                "type": "For Each",
                                 "x": 20,
-                                "y": 46,
+                                "y": 82,
                                 "parameters": {
-                                    "rowspan": 1
+                                    "template": "/Product Table/Product Table Item Cell"
                                 },
                                 "ports": [],
-                                "children": [
-                                    {
-                                        "id": "00d0dec2-8151-b47f-89d0-d173ac8326bb",
-                                        "type": "Group",
-                                        "x": 20,
-                                        "y": 46,
-                                        "parameters": {
-                                            "flexDirection": "row"
-                                        },
-                                        "ports": [],
-                                        "children": [
-                                            {
-                                                "id": "1f93bc03-efbe-5900-bc8e-02db9d293300",
-                                                "type": "Image",
-                                                "x": 606,
-                                                "y": 414,
-                                                "parameters": {
-                                                    "src": "noodl-logo.png",
-                                                    "sizeMode": "explicit",
-                                                    "width": {
-                                                        "value": 24,
-                                                        "unit": "px"
-                                                    },
-                                                    "height": {
-                                                        "value": 24,
-                                                        "unit": "px"
-                                                    }
-                                                },
-                                                "ports": [],
-                                                "children": []
-                                            },
-                                            {
-                                                "id": "0a14cdfe-ecb4-dee4-ef5c-ce3538993b35",
-                                                "type": "Text",
-                                                "x": 606,
-                                                "y": 460,
-                                                "parameters": {
-                                                    "text": "cell",
-                                                    "style": "/* example:\n{\n\tbackgroundColor: 'red'\n}\n*/\n\n{\n    position: \"static\"\n}"
-                                                },
-                                                "ports": [],
-                                                "children": []
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "id": "779e9275-2ac6-6837-014d-a3dcee56a68b",
-                                "type": "Table Cell",
-                                "x": 20,
-                                "y": 230,
-                                "parameters": {
-                                    "rowspan": 1
-                                },
-                                "ports": [],
-                                "children": [
-                                    {
-                                        "id": "6f45bd08-cd51-3af1-94a5-f771e9d7e6ba",
-                                        "type": "Group",
-                                        "x": 586,
-                                        "y": 552,
-                                        "parameters": {
-                                            "flexDirection": "row"
-                                        },
-                                        "ports": [],
-                                        "children": [
-                                            {
-                                                "id": "a8af7600-b516-81e5-43c6-33dadb9a46ea",
-                                                "type": "Image",
-                                                "x": 606,
-                                                "y": 598,
-                                                "parameters": {
-                                                    "src": "noodl-logo.png",
-                                                    "sizeMode": "explicit",
-                                                    "width": {
-                                                        "value": 24,
-                                                        "unit": "px"
-                                                    },
-                                                    "height": {
-                                                        "value": 24,
-                                                        "unit": "px"
-                                                    }
-                                                },
-                                                "ports": [],
-                                                "children": []
-                                            },
-                                            {
-                                                "id": "b56e8730-097c-1578-e2cc-a01f950fb38d",
-                                                "type": "Text",
-                                                "x": 606,
-                                                "y": 644,
-                                                "parameters": {
-                                                    "text": "cell",
-                                                    "style": "/* example:\n{\n\tbackgroundColor: 'red'\n}\n*/\n\n{\n    position: \"static\"\n}"
-                                                },
-                                                "ports": [],
-                                                "children": []
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "id": "9b0498dd-3953-1b72-4439-45602f8bc23f",
-                                "type": "Table Cell",
-                                "x": 20,
-                                "y": 414,
-                                "parameters": {
-                                    "rowspan": 1
-                                },
-                                "ports": [],
-                                "children": [
-                                    {
-                                        "id": "18c7477d-b8ce-759d-c403-ade3c77f97a3",
-                                        "type": "Group",
-                                        "x": 586,
-                                        "y": 736,
-                                        "parameters": {
-                                            "flexDirection": "row"
-                                        },
-                                        "ports": [],
-                                        "children": [
-                                            {
-                                                "id": "4aad6738-494d-055b-5ae7-30ad3dbb89d9",
-                                                "type": "Image",
-                                                "x": 606,
-                                                "y": 782,
-                                                "parameters": {
-                                                    "src": "noodl-logo.png",
-                                                    "sizeMode": "explicit",
-                                                    "width": {
-                                                        "value": 24,
-                                                        "unit": "px"
-                                                    },
-                                                    "height": {
-                                                        "value": 24,
-                                                        "unit": "px"
-                                                    }
-                                                },
-                                                "ports": [],
-                                                "children": []
-                                            },
-                                            {
-                                                "id": "1ec14ea7-bbcc-cecb-bd6e-45a4568c0b42",
-                                                "type": "Text",
-                                                "x": 606,
-                                                "y": 828,
-                                                "parameters": {
-                                                    "text": "cell",
-                                                    "style": "/* example:\n{\n\tbackgroundColor: 'red'\n}\n*/\n\n{\n    position: \"static\"\n}"
-                                                },
-                                                "ports": [],
-                                                "children": []
-                                            }
-                                        ]
-                                    }
-                                ]
+                                "dynamicports": [],
+                                "children": []
                             }
                         ]
+                    },
+                    {
+                        "id": "f42bf9ac-6893-8e58-18e9-994c0436a298",
+                        "type": "DbModel",
+                        "x": 285.22737993122826,
+                        "y": 190.89260858154523,
+                        "parameters": {
+                            "$ndlCollectionName": "Product",
+                            "properties": "cells"
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "cells",
+                                "index": 16
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed cells",
+                                "name": "changed-cells",
+                                "index": 17
+                            },
+                            {
+                                "name": "$ndlCollectionName",
+                                "displayName": "Collection Name",
+                                "group": "General",
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        {
+                                            "value": "ProductCategory",
+                                            "label": "ProductCategory"
+                                        },
+                                        {
+                                            "value": "ProductFamily",
+                                            "label": "ProductFamily"
+                                        },
+                                        {
+                                            "value": "ProductGroup",
+                                            "label": "ProductGroup"
+                                        },
+                                        {
+                                            "value": "Manufacturer",
+                                            "label": "Manufacturer"
+                                        },
+                                        {
+                                            "value": "EPD",
+                                            "label": "EPD"
+                                        },
+                                        {
+                                            "value": "Product",
+                                            "label": "Product"
+                                        },
+                                        {
+                                            "value": "Parameter",
+                                            "label": "Parameter"
+                                        },
+                                        {
+                                            "value": "Index",
+                                            "label": "Index"
+                                        },
+                                        {
+                                            "value": "undefined",
+                                            "label": "undefined"
+                                        },
+                                        {
+                                            "value": "Dictionary_sv",
+                                            "label": "Dictionary_sv"
+                                        },
+                                        {
+                                            "value": "Dictionary_en",
+                                            "label": "Dictionary_en"
+                                        },
+                                        {
+                                            "value": "Projects",
+                                            "label": "Projects"
+                                        },
+                                        {
+                                            "value": "ParameterCategory",
+                                            "label": "ParameterCategory"
+                                        }
+                                    ],
+                                    "allowEditOnly": true
+                                },
+                                "plug": "input",
+                                "index": 18
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "createdAt",
+                                "index": 19
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed createdAt",
+                                "name": "changed-createdAt",
+                                "index": 20
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "updatedAt",
+                                "index": 21
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed updatedAt",
+                                "name": "changed-updatedAt",
+                                "index": 22
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "import_id",
+                                "index": 23
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed import_id",
+                                "name": "changed-import_id",
+                                "index": 24
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "manufacturer_id",
+                                "index": 25
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed manufacturer_id",
+                                "name": "changed-manufacturer_id",
+                                "index": 26
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "label_sv",
+                                "index": 27
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed label_sv",
+                                "name": "changed-label_sv",
+                                "index": 28
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "desc_sv",
+                                "index": 29
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed desc_sv",
+                                "name": "changed-desc_sv",
+                                "index": 30
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "family_id",
+                                "index": 31
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed family_id",
+                                "name": "changed-family_id",
+                                "index": 32
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "epd_id",
+                                "index": 33
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed epd_id",
+                                "name": "changed-epd_id",
+                                "index": 34
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "group_id",
+                                "index": 35
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed group_id",
+                                "name": "changed-group_id",
+                                "index": 36
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "art_nr",
+                                "index": 37
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed art_nr",
+                                "name": "changed-art_nr",
+                                "index": 38
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "image",
+                                "index": 39
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed image",
+                                "name": "changed-image",
+                                "index": 40
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "FU",
+                                "index": 41
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed FU",
+                                "name": "changed-FU",
+                                "index": 42
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "category_id",
+                                "index": 43
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed category_id",
+                                "name": "changed-category_id",
+                                "index": 44
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "length_mm",
+                                "index": 45
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed length_mm",
+                                "name": "changed-length_mm",
+                                "index": 46
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "desc_en",
+                                "index": 47
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed desc_en",
+                                "name": "changed-desc_en",
+                                "index": 48
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "label_en",
+                                "index": 49
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed label_en",
+                                "name": "changed-label_en",
+                                "index": 50
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "width_mm",
+                                "index": 51
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed width_mm",
+                                "name": "changed-width_mm",
+                                "index": 52
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "thickness_mm",
+                                "index": 53
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed thickness_mm",
+                                "name": "changed-thickness_mm",
+                                "index": 54
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "weight_kg",
+                                "index": 55
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed weight_kg",
+                                "name": "changed-weight_kg",
+                                "index": 56
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "co2",
+                                "index": 57
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed co2",
+                                "name": "changed-co2",
+                                "index": 58
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "RC",
+                                "index": 59
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed RC",
+                                "name": "changed-RC",
+                                "index": 60
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "health",
+                                "index": 61
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed health",
+                                "name": "changed-health",
+                                "index": 62
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "data_quality",
+                                "index": 63
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed data_quality",
+                                "name": "changed-data_quality",
+                                "index": 64
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "iso_11654",
+                                "index": 65
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed iso_11654",
+                                "name": "changed-iso_11654",
+                                "index": 66
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "iso_10848_2",
+                                "index": 67
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed iso_10848_2",
+                                "name": "changed-iso_10848_2",
+                                "index": 68
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "iso_13501_1",
+                                "index": 69
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed iso_13501_1",
+                                "name": "changed-iso_13501_1",
+                                "index": 70
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "heat_conduct",
+                                "index": 71
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed heat_conduct",
+                                "name": "changed-heat_conduct",
+                                "index": 72
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "iso_13501",
+                                "index": 73
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed iso_13501",
+                                "name": "changed-iso_13501",
+                                "index": 74
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "s_reduct_door",
+                                "index": 75
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed s_reduct_door",
+                                "name": "changed-s_reduct_door",
+                                "index": 76
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "wind_material",
+                                "index": 77
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed wind_material",
+                                "name": "changed-wind_material",
+                                "index": 78
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "iso_1077_12",
+                                "index": 79
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed iso_1077_12",
+                                "name": "changed-iso_1077_12",
+                                "index": 80
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "iso_140_3",
+                                "index": 81
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed iso_140_3",
+                                "name": "changed-iso_140_3",
+                                "index": 82
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "diameter_mm",
+                                "index": 83
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed diameter_mm",
+                                "name": "changed-diameter_mm",
+                                "index": 84
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "abs_per_st",
+                                "index": 85
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed abs_per_st",
+                                "name": "changed-abs_per_st",
+                                "index": 86
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "light_refl",
+                                "index": 87
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed light_refl",
+                                "name": "changed-light_refl",
+                                "index": 88
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "keywords_sv",
+                                "index": 89
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed keywords_sv",
+                                "name": "changed-keywords_sv",
+                                "index": 90
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "keywords_en",
+                                "index": 91
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Events",
+                                "displayName": "Changed keywords_en",
+                                "name": "changed-keywords_en",
+                                "index": 92
+                            },
+                            {
+                                "name": "$ndlModelInitCode",
+                                "displayName": "Initialize",
+                                "group": "Scripts",
+                                "type": {
+                                    "name": "string",
+                                    "allowEditOnly": true,
+                                    "codeeditor": "javascript"
+                                },
+                                "default": "initialize({\n\t// Here you can initialize new models\n\t//myProperty:'Some init value',\n\t//anotherProperty:function() { return 'Some other value' }\n})\n",
+                                "plug": "input",
+                                "index": 93
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "e11ce592-5078-9882-2297-87a12f60bf5c",
+                        "type": "For Each Actions",
+                        "x": 22.071155007937833,
+                        "y": 203.8953299546472,
+                        "parameters": {},
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "658c85c0-9f18-3ced-e41c-d9971c8adf49",
+                        "type": "Javascript2",
+                        "x": 286.1729912097255,
+                        "y": 397.98258006497235,
+                        "parameters": {
+                            "code": "script({\n\t// The input ports of the Javascript node, name of input and type\n\tinputs:{\n        objectId:'string',\n        columns:'array'\n\t},\n\toutputs:{\n\t    cells:'array',\n\t},\n\tsignals:{\n\t\tgenerate:function() {\n\t\t    let object = Noodl.Object.get(this.inputs.objectId);\n\t\t    let cells = Noodl.Array.get(this.inputs.objectId+\"_cells\");\n\t\t    cells.set({});\n\t        this.inputs.columns.each(col=>{\n\t            let key = col.get(\"key\");\n\t            let value = object.get([key]);\n\t            let cell = Noodl.Model.get(this.inputs.objectId+\"_cells_\"+key);\n\t\t        cell.setAll({key:key,value:value});\n\t\t        cells.add(cell);\n\t        })\n\t        \n\t        this.setOutputs({cells: cells});\n            //object.set(\"cells\",cells);\n\t\t}\n\t}\n})\n"
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "name": "objectId",
+                                "plug": "input",
+                                "type": {
+                                    "name": "string"
+                                },
+                                "group": "Inputs",
+                                "index": 2
+                            },
+                            {
+                                "name": "columns",
+                                "plug": "input",
+                                "type": {
+                                    "name": "array"
+                                },
+                                "group": "Inputs",
+                                "index": 3
+                            },
+                            {
+                                "name": "generate",
+                                "plug": "input",
+                                "type": {
+                                    "name": "signal"
+                                },
+                                "group": "Inputs",
+                                "index": 4
+                            },
+                            {
+                                "name": "cells",
+                                "type": {
+                                    "name": "array"
+                                },
+                                "plug": "output",
+                                "group": "Outputs",
+                                "index": 5
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "84cb0927-815e-5aa9-c034-693f08c3061e",
+                        "type": "Collection",
+                        "x": 22.582188371884833,
+                        "y": 405.62903493422505,
+                        "parameters": {
+                            "collectionId": "CurrentColumns"
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": []
                     }
                 ]
             }
         },
         {
-            "name": "/My Table Header Component",
+            "name": "/Product Table/Product Table Header",
             "id": "8c828d6c-045b-0108-cf9f-5a28ba98882a",
             "graph": {
-                "connections": [],
+                "connections": [
+                    {
+                        "fromId": "8b2d73c9-6e91-f53b-f191-68c25ef1f4d7",
+                        "fromProperty": "items",
+                        "toId": "ccc0e728-7984-cba7-03b5-f9ab9543c162",
+                        "toProperty": "items"
+                    }
+                ],
                 "roots": [
                     {
-                        "id": "802cd712-4d60-fd47-367c-40c4c761638a",
-                        "type": "Table Row",
-                        "x": 688,
-                        "y": 377,
+                        "id": "522572d4-cd13-3871-5ef3-928398ca0b4b",
+                        "type": "Table Head",
+                        "x": 625,
+                        "y": 302.5,
                         "parameters": {},
                         "ports": [],
+                        "dynamicports": [],
                         "children": [
                             {
-                                "id": "1f47b466-71c6-c1e0-7185-e1af44b2e8a8",
-                                "type": "Table Cell",
-                                "x": 20,
-                                "y": 46,
-                                "parameters": {
-                                    "cellType": "th"
-                                },
+                                "id": "802cd712-4d60-fd47-367c-40c4c761638a",
+                                "type": "Table Row",
+                                "x": 669,
+                                "y": 323,
+                                "parameters": {},
                                 "ports": [],
+                                "dynamicports": [],
                                 "children": [
                                     {
-                                        "id": "34808db4-5bb3-2ccd-aed8-af0202be9068",
-                                        "type": "Group",
-                                        "x": 455,
-                                        "y": 508,
+                                        "id": "ccc0e728-7984-cba7-03b5-f9ab9543c162",
+                                        "type": "For Each",
+                                        "x": 20,
+                                        "y": 46,
                                         "parameters": {
-                                            "flexDirection": "row"
+                                            "template": "/Product Table/Product Table Header Cell "
                                         },
                                         "ports": [],
-                                        "children": [
-                                            {
-                                                "id": "df0cb44a-0224-ae05-4fe7-15f310969e15",
-                                                "type": "Image",
-                                                "x": 20,
-                                                "y": 46,
-                                                "parameters": {
-                                                    "src": "noodl-logo.png",
-                                                    "sizeMode": "explicit",
-                                                    "width": {
-                                                        "value": 50,
-                                                        "unit": "px"
-                                                    },
-                                                    "height": {
-                                                        "value": 50,
-                                                        "unit": "px"
-                                                    }
-                                                },
-                                                "ports": [],
-                                                "children": []
-                                            },
-                                            {
-                                                "id": "87d639eb-a655-7160-b990-05aac305209e",
-                                                "type": "Text",
-                                                "x": 495.7160695998325,
-                                                "y": 576.2489594000976,
-                                                "parameters": {
-                                                    "text": "cell",
-                                                    "style": "/* example:\n{\n\tbackgroundColor: 'red'\n}\n*/\n\n{\n    position: \"static\"\n}"
-                                                },
-                                                "ports": [],
-                                                "children": []
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "id": "8007bcac-90c1-6214-fc72-e974bf49ec3d",
-                                "type": "Table Cell",
-                                "x": 519.4444002265531,
-                                "y": 444.67508325456504,
-                                "parameters": {
-                                    "cellType": "th"
-                                },
-                                "ports": [],
-                                "children": [
-                                    {
-                                        "id": "d0473550-102e-9674-2e7c-5c7c222f267e",
-                                        "type": "Group",
-                                        "x": 455,
-                                        "y": 692,
-                                        "parameters": {
-                                            "flexDirection": "row"
-                                        },
-                                        "ports": [],
-                                        "children": [
-                                            {
-                                                "id": "7c0a2362-a0d9-fdf4-28b2-dddcd2997847",
-                                                "type": "Image",
-                                                "x": 495.7160695998325,
-                                                "y": 530.2489594000976,
-                                                "parameters": {
-                                                    "src": "noodl-logo.png",
-                                                    "sizeMode": "explicit",
-                                                    "width": {
-                                                        "value": 24,
-                                                        "unit": "px"
-                                                    },
-                                                    "height": {
-                                                        "value": 24,
-                                                        "unit": "px"
-                                                    }
-                                                },
-                                                "ports": [],
-                                                "children": []
-                                            },
-                                            {
-                                                "id": "5e84327d-19cc-bab9-cc84-69490175ab10",
-                                                "type": "Text",
-                                                "x": 495.7160695998325,
-                                                "y": 576.2489594000976,
-                                                "parameters": {
-                                                    "text": "cell",
-                                                    "style": "/* example:\n{\n\tbackgroundColor: 'red'\n}\n*/\n\n{\n    position: \"static\"\n}"
-                                                },
-                                                "ports": [],
-                                                "children": []
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "id": "8c87e035-a951-e0e6-398b-49dba40571f9",
-                                "type": "Table Cell",
-                                "x": 435,
-                                "y": 646,
-                                "parameters": {
-                                    "cellType": "th"
-                                },
-                                "ports": [],
-                                "children": [
-                                    {
-                                        "id": "71c6d57c-fe8e-1729-7eb9-1353d204ce6f",
-                                        "type": "Group",
-                                        "x": 488.1529284668387,
-                                        "y": 919.0587000995188,
-                                        "parameters": {
-                                            "flexDirection": "row"
-                                        },
-                                        "ports": [],
-                                        "children": [
-                                            {
-                                                "id": "3acd5a33-7226-d008-f45d-c002c75579ea",
-                                                "type": "Image",
-                                                "x": 495.7160695998325,
-                                                "y": 530.2489594000976,
-                                                "parameters": {
-                                                    "src": "noodl-logo.png",
-                                                    "sizeMode": "explicit",
-                                                    "width": {
-                                                        "value": 24,
-                                                        "unit": "px"
-                                                    },
-                                                    "height": {
-                                                        "value": 24,
-                                                        "unit": "px"
-                                                    }
-                                                },
-                                                "ports": [],
-                                                "children": []
-                                            },
-                                            {
-                                                "id": "620109a1-ee96-0c25-85f2-afb4b82ded28",
-                                                "type": "Text",
-                                                "x": 495.7160695998325,
-                                                "y": 576.2489594000976,
-                                                "parameters": {
-                                                    "text": "cell",
-                                                    "style": "/* example:\n{\n\tbackgroundColor: 'red'\n}\n*/\n\n{\n    position: \"static\"\n}"
-                                                },
-                                                "ports": [],
-                                                "children": []
-                                            }
-                                        ]
+                                        "dynamicports": [],
+                                        "children": []
                                     }
                                 ]
                             }
                         ]
+                    },
+                    {
+                        "id": "8b2d73c9-6e91-f53b-f191-68c25ef1f4d7",
+                        "type": "Collection",
+                        "x": 348,
+                        "y": 373,
+                        "parameters": {
+                            "collectionId": "CurrentColumns"
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": []
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/Product Table/Product Table Header Cell ",
+            "id": "7fe0d189-6494-e207-6329-704ff164b4e9",
+            "graph": {
+                "connections": [
+                    {
+                        "fromId": "477b5d53-8c07-6439-15cf-a516cce0b5f9",
+                        "fromProperty": "label",
+                        "toId": "ab830a4c-dc18-7238-4cb8-b7965c1c2493",
+                        "toProperty": "text"
+                    }
+                ],
+                "roots": [
+                    {
+                        "id": "0fcf86a5-e573-52e9-1a9b-8a3f239d88ea",
+                        "type": "Table Cell",
+                        "x": 237,
+                        "y": 277,
+                        "parameters": {
+                            "cellType": "th"
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": [
+                            {
+                                "id": "ab830a4c-dc18-7238-4cb8-b7965c1c2493",
+                                "type": "Text",
+                                "x": 20,
+                                "y": 46,
+                                "parameters": {
+                                    "text": "cell",
+                                    "style": "/* example:\n{\n\tbackgroundColor: 'red'\n}\n*/\n\n{\n    position: \"static\"\n}",
+                                    "fontFamily": "Courier New",
+                                    "fontSize": {
+                                        "value": 16,
+                                        "unit": "px"
+                                    },
+                                    "height": {
+                                        "value": 32,
+                                        "unit": "px"
+                                    },
+                                    "sizeMode": "contentSize"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "477b5d53-8c07-6439-15cf-a516cce0b5f9",
+                        "type": "Component Inputs",
+                        "x": -126,
+                        "y": 305,
+                        "parameters": {},
+                        "ports": [
+                            {
+                                "name": "label",
+                                "plug": "output",
+                                "type": "*",
+                                "index": 0
+                            }
+                        ],
+                        "dynamicports": [],
+                        "children": []
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/Product Table/Product Table Item Cell",
+            "id": "1dc5c151-868d-413e-9bfa-c1ceb2858565",
+            "graph": {
+                "connections": [
+                    {
+                        "fromId": "a1476a7c-0e65-7a64-5872-546f34863b78",
+                        "fromProperty": "itemId",
+                        "toId": "0987d913-bc78-864b-3aa0-5f51647d3f5d",
+                        "toProperty": "modelId"
+                    },
+                    {
+                        "fromId": "0987d913-bc78-864b-3aa0-5f51647d3f5d",
+                        "fromProperty": "value",
+                        "toId": "a2b98eea-299d-88f4-bf48-87ac5cdbdfe5",
+                        "toProperty": "text"
+                    },
+                    {
+                        "fromId": "1c73b377-9d31-166d-1685-2ff697303cb2",
+                        "fromProperty": "items",
+                        "toId": "4efd89ab-6ac0-d46f-eec6-93221c136693",
+                        "toProperty": "columns"
+                    }
+                ],
+                "roots": [
+                    {
+                        "id": "cea11310-b8dd-8181-3faf-31bfc775e119",
+                        "type": "Table Cell",
+                        "x": 257,
+                        "y": 467,
+                        "parameters": {
+                            "className": "table-body-cell"
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": [
+                            {
+                                "id": "a2b98eea-299d-88f4-bf48-87ac5cdbdfe5",
+                                "type": "Text",
+                                "x": 560.3205171627097,
+                                "y": 293.21125937715567,
+                                "parameters": {
+                                    "text": "cell",
+                                    "style": "/* example:\n{\n\tbackgroundColor: 'red'\n}\n*/\n\n{\n    position: \"static\"\n}",
+                                    "fontFamily": "Courier New",
+                                    "fontSize": {
+                                        "value": 16,
+                                        "unit": "px"
+                                    }
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "a1476a7c-0e65-7a64-5872-546f34863b78",
+                        "type": "For Each Actions",
+                        "x": -133,
+                        "y": 407.5,
+                        "parameters": {},
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "0987d913-bc78-864b-3aa0-5f51647d3f5d",
+                        "type": "Model",
+                        "x": 46,
+                        "y": 408.5,
+                        "parameters": {
+                            "properties": "key,value"
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "key",
+                                "index": 11
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Changed Events",
+                                "displayName": "key Changed",
+                                "name": "changed-key",
+                                "index": 12
+                            },
+                            {
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "input/output",
+                                "group": "Properties",
+                                "name": "value",
+                                "index": 13
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "output",
+                                "group": "Changed Events",
+                                "displayName": "value Changed",
+                                "name": "changed-value",
+                                "index": 14
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "1c73b377-9d31-166d-1685-2ff697303cb2",
+                        "type": "Collection",
+                        "x": -219.71148828198636,
+                        "y": 780.645560527361,
+                        "parameters": {
+                            "collectionId": "CurrentColumns"
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "4efd89ab-6ac0-d46f-eec6-93221c136693",
+                        "type": "Javascript2",
+                        "x": 64.28851171801364,
+                        "y": 793.645560527361,
+                        "parameters": {
+                            "code": "script({\n\tinputs:{\n        columns:'array',\n        key:'string'\n\t},\n\toutputs:{\n\t    mount:'boolean',\n\t},\n\tsignals: {\n\t    checkColumns: function(){\n\t        this.check();\n\t    }\n\t},\n\tchanged:{\n\t\tcolumns:function(value) {\n\t\t    this.check();\n\t\t}\n\t},\n\tmethods:{\n\t\tcheck:function() {\n\t\t    let found = false;\n\t\t    this.inputs.columns.each(col =>{\n\t\t        if(col.get(\"key\") === this.inputs.key) found = true;\n\t\t    })\n\t\t    this.setOutputs({mount:found});\n\t\t}\n\t}\n})\n"
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "name": "columns",
+                                "plug": "input",
+                                "type": {
+                                    "name": "array"
+                                },
+                                "group": "Inputs",
+                                "index": 2
+                            },
+                            {
+                                "name": "key",
+                                "plug": "input",
+                                "type": {
+                                    "name": "string"
+                                },
+                                "group": "Inputs",
+                                "index": 3
+                            },
+                            {
+                                "name": "checkColumns",
+                                "plug": "input",
+                                "type": {
+                                    "name": "signal"
+                                },
+                                "group": "Inputs",
+                                "index": 4
+                            },
+                            {
+                                "name": "mount",
+                                "type": {
+                                    "name": "boolean"
+                                },
+                                "plug": "output",
+                                "group": "Outputs",
+                                "index": 5
+                            }
+                        ],
+                        "children": []
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/Product Table/Product Table Items",
+            "id": "e709785f-2b25-f3de-5d61-f728abaf520c",
+            "graph": {
+                "connections": [
+                    {
+                        "fromId": "a6b2392c-ca53-1e67-0249-88b378a73e05",
+                        "fromProperty": "Items",
+                        "toId": "039cef9c-0822-f81c-3ea4-182d12497771",
+                        "toProperty": "items"
+                    }
+                ],
+                "roots": [
+                    {
+                        "id": "7808f2f4-00c0-ab8b-a8c4-350788f6a76e",
+                        "type": "Table Body",
+                        "x": 302,
+                        "y": 291,
+                        "parameters": {},
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": [
+                            {
+                                "id": "039cef9c-0822-f81c-3ea4-182d12497771",
+                                "type": "For Each",
+                                "x": 20,
+                                "y": 46,
+                                "parameters": {
+                                    "template": "/Product Table/Product Table Item"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "a6b2392c-ca53-1e67-0249-88b378a73e05",
+                        "type": "Component Inputs",
+                        "x": 16,
+                        "y": 337,
+                        "parameters": {},
+                        "ports": [
+                            {
+                                "name": "Items",
+                                "plug": "output",
+                                "type": {
+                                    "name": "*"
+                                },
+                                "index": 1
+                            }
+                        ],
+                        "dynamicports": [],
+                        "children": []
+                    }
+                ]
+            }
+        },
+        {
+            "name": "/Main Table Test",
+            "id": "0a892918-8fec-f586-432a-4aa2827140b5",
+            "graph": {
+                "connections": [
+                    {
+                        "fromId": "739bfe84-db49-2252-bd1d-6b52c0b76a4c",
+                        "fromProperty": "didMount",
+                        "toId": "98e7768e-bca3-1909-9602-889a197a271d",
+                        "toProperty": "storageFetch"
+                    },
+                    {
+                        "fromId": "6b1bfa1f-c6c4-f70e-165c-ae3749ba3559",
+                        "fromProperty": "items",
+                        "toId": "c58b5286-8847-42d6-e331-40231ab66243",
+                        "toProperty": "items"
+                    },
+                    {
+                        "fromId": "98e7768e-bca3-1909-9602-889a197a271d",
+                        "fromProperty": "items",
+                        "toId": "1859567c-cfb3-d5ba-5240-b8ec2a37ae3e",
+                        "toProperty": "Items"
+                    }
+                ],
+                "roots": [
+                    {
+                        "id": "739bfe84-db49-2252-bd1d-6b52c0b76a4c",
+                        "type": "Group",
+                        "x": 218,
+                        "y": 284,
+                        "parameters": {},
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": [
+                            {
+                                "id": "1859567c-cfb3-d5ba-5240-b8ec2a37ae3e",
+                                "type": "/Product Table/Product Table",
+                                "x": 20,
+                                "y": 82,
+                                "parameters": {},
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "6b1bfa1f-c6c4-f70e-165c-ae3749ba3559",
+                        "type": "Static Data",
+                        "x": -28.078572991601476,
+                        "y": 99.26654972478218,
+                        "parameters": {
+                            "csv": "key,label\nlabel_sv,Name\nco2,Co2\nwidth_mm,Width\nlength_mm,Längd\nFU,Unit"
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "98e7768e-bca3-1909-9602-889a197a271d",
+                        "type": "DbCollection",
+                        "x": -24.235974758739417,
+                        "y": 339.1258191001363,
+                        "parameters": {
+                            "collectionName": "Product",
+                            "storageEnableLimit": true
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "name": "collectionName",
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        {
+                                            "value": "ProductCategory",
+                                            "label": "ProductCategory"
+                                        },
+                                        {
+                                            "value": "ProductFamily",
+                                            "label": "ProductFamily"
+                                        },
+                                        {
+                                            "value": "ProductGroup",
+                                            "label": "ProductGroup"
+                                        },
+                                        {
+                                            "value": "Manufacturer",
+                                            "label": "Manufacturer"
+                                        },
+                                        {
+                                            "value": "EPD",
+                                            "label": "EPD"
+                                        },
+                                        {
+                                            "value": "Product",
+                                            "label": "Product"
+                                        },
+                                        {
+                                            "value": "Parameter",
+                                            "label": "Parameter"
+                                        },
+                                        {
+                                            "value": "Index",
+                                            "label": "Index"
+                                        },
+                                        {
+                                            "value": "undefined",
+                                            "label": "undefined"
+                                        },
+                                        {
+                                            "value": "Dictionary_sv",
+                                            "label": "Dictionary_sv"
+                                        },
+                                        {
+                                            "value": "Dictionary_en",
+                                            "label": "Dictionary_en"
+                                        },
+                                        {
+                                            "value": "Projects",
+                                            "label": "Projects"
+                                        },
+                                        {
+                                            "value": "ParameterCategory",
+                                            "label": "ParameterCategory"
+                                        }
+                                    ],
+                                    "allowEditOnly": true
+                                },
+                                "displayName": "Collection Name",
+                                "plug": "input",
+                                "group": "General",
+                                "index": 8
+                            },
+                            {
+                                "name": "storageFilterType",
+                                "type": {
+                                    "name": "enum",
+                                    "allowEditOnly": true,
+                                    "enums": [
+                                        {
+                                            "value": "simple",
+                                            "label": "Simple"
+                                        },
+                                        {
+                                            "value": "json",
+                                            "label": "Advanced"
+                                        }
+                                    ]
+                                },
+                                "displayName": "Filter",
+                                "default": "simple",
+                                "plug": "input",
+                                "group": "General",
+                                "index": 9
+                            },
+                            {
+                                "type": "boolean",
+                                "plug": "input",
+                                "group": "Limit",
+                                "name": "storageEnableLimit",
+                                "displayName": "Use limit",
+                                "index": 10
+                            },
+                            {
+                                "type": "number",
+                                "default": 10,
+                                "plug": "input",
+                                "group": "Limit",
+                                "name": "storageLimit",
+                                "displayName": "Limit",
+                                "index": 11
+                            },
+                            {
+                                "type": "number",
+                                "default": 0,
+                                "plug": "input",
+                                "group": "Limit",
+                                "name": "storageSkip",
+                                "displayName": "Skip",
+                                "index": 12
+                            },
+                            {
+                                "type": "signal",
+                                "plug": "input",
+                                "group": "Storage",
+                                "name": "storageFetch",
+                                "displayName": "Fetch",
+                                "index": 13
+                            },
+                            {
+                                "type": {
+                                    "name": "stringlist",
+                                    "allowEditOnly": true
+                                },
+                                "plug": "input",
+                                "group": "Filter",
+                                "name": "storageFilter",
+                                "displayName": "Filter",
+                                "index": 14
+                            },
+                            {
+                                "type": {
+                                    "name": "stringlist",
+                                    "allowEditOnly": true
+                                },
+                                "plug": "input",
+                                "group": "Sort",
+                                "name": "storageSort",
+                                "displayName": "Sort",
+                                "index": 15
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "c58b5286-8847-42d6-e331-40231ab66243",
+                        "type": "Collection",
+                        "x": -26.07099705476989,
+                        "y": 193.7081800601535,
+                        "parameters": {
+                            "collectionId": "CurrentColumns"
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": []
                     }
                 ]
             }
         }
     ],
     "settings": {},
-    "rootNodeId": "e8570140-710c-df7f-2314-faa1656a4f9c",
+    "rootNodeId": "739bfe84-db49-2252-bd1d-6b52c0b76a4c",
     "version": "1",
     "metadata": {
-        "dbCollections": []
+        "dbCollections": [
+            {
+                "name": "ProductCategory",
+                "schema": {
+                    "properties": {
+                        "createdAt": {
+                            "type": "Date"
+                        },
+                        "updatedAt": {
+                            "type": "Date"
+                        },
+                        "label_sv": {
+                            "type": "String"
+                        },
+                        "path": {
+                            "type": "String"
+                        },
+                        "import_id": {
+                            "type": "Number"
+                        },
+                        "label_en": {
+                            "type": "String"
+                        },
+                        "keywords_sv": {
+                            "type": "String"
+                        },
+                        "keywords_en": {
+                            "type": "String"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "ProductFamily",
+                "schema": {
+                    "properties": {
+                        "createdAt": {
+                            "type": "Date"
+                        },
+                        "updatedAt": {
+                            "type": "Date"
+                        },
+                        "label_sv": {
+                            "type": "String"
+                        },
+                        "path": {
+                            "type": "String"
+                        },
+                        "import_id": {
+                            "type": "Number"
+                        },
+                        "category_id": {
+                            "type": "Pointer",
+                            "targetClass": "ProductCategory"
+                        },
+                        "label_en": {
+                            "type": "String"
+                        },
+                        "keywords_sv": {
+                            "type": "String"
+                        },
+                        "keywords_en": {
+                            "type": "String"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "ProductGroup",
+                "schema": {
+                    "properties": {
+                        "createdAt": {
+                            "type": "Date"
+                        },
+                        "updatedAt": {
+                            "type": "Date"
+                        },
+                        "import_id": {
+                            "type": "Number"
+                        },
+                        "label_sv": {
+                            "type": "String"
+                        },
+                        "params": {
+                            "type": "Array"
+                        },
+                        "path": {
+                            "type": "String"
+                        },
+                        "family_id": {
+                            "type": "Pointer",
+                            "targetClass": "ProductFamily"
+                        },
+                        "label_en": {
+                            "type": "String"
+                        },
+                        "kvantitativ_enhet": {
+                            "type": "String"
+                        },
+                        "maxes": {
+                            "type": "Array"
+                        },
+                        "mins": {
+                            "type": "Array"
+                        },
+                        "keywords_sv": {
+                            "type": "String"
+                        },
+                        "keywords_en": {
+                            "type": "String"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Manufacturer",
+                "schema": {
+                    "properties": {
+                        "createdAt": {
+                            "type": "Date"
+                        },
+                        "updatedAt": {
+                            "type": "Date"
+                        },
+                        "import_id": {
+                            "type": "Number"
+                        },
+                        "label": {
+                            "type": "String"
+                        },
+                        "logo": {
+                            "type": "String"
+                        },
+                        "keywords_sv": {
+                            "type": "String"
+                        },
+                        "keywords_en": {
+                            "type": "String"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "EPD",
+                "schema": {
+                    "properties": {
+                        "createdAt": {
+                            "type": "Date"
+                        },
+                        "updatedAt": {
+                            "type": "Date"
+                        },
+                        "import_id": {
+                            "type": "Number"
+                        },
+                        "label": {
+                            "type": "String"
+                        },
+                        "manufacturer_id": {
+                            "type": "Pointer",
+                            "targetClass": "Manufacturer"
+                        },
+                        "Fixt_wight": {
+                            "type": "Number"
+                        },
+                        "Product_reff_name_in_EPD": {
+                            "type": "String"
+                        },
+                        "Disciption": {
+                            "type": "String"
+                        },
+                        "Samanfogad": {
+                            "type": "String"
+                        },
+                        "Dynamic_wight": {
+                            "type": "Number"
+                        },
+                        "A4_Co2e": {
+                            "type": "Number"
+                        },
+                        "FU": {
+                            "type": "String"
+                        },
+                        "Ref_weight__kg_": {
+                            "type": "Number"
+                        },
+                        "Varianter_index": {
+                            "type": "Number"
+                        },
+                        "Name": {
+                            "type": "String"
+                        },
+                        "Fixt__KG_": {
+                            "type": "Number"
+                        },
+                        "variabel_KG_": {
+                            "type": "Number"
+                        },
+                        "Fixt_Co2": {
+                            "type": "Number"
+                        },
+                        "Co2": {
+                            "type": "Number"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Product",
+                "schema": {
+                    "properties": {
+                        "createdAt": {
+                            "type": "Date"
+                        },
+                        "updatedAt": {
+                            "type": "Date"
+                        },
+                        "import_id": {
+                            "type": "Number"
+                        },
+                        "manufacturer_id": {
+                            "type": "Pointer",
+                            "targetClass": "Manufacturer"
+                        },
+                        "label_sv": {
+                            "type": "String"
+                        },
+                        "desc_sv": {
+                            "type": "String"
+                        },
+                        "family_id": {
+                            "type": "Pointer",
+                            "targetClass": "ProductFamily"
+                        },
+                        "epd_id": {
+                            "type": "Pointer",
+                            "targetClass": "EPD"
+                        },
+                        "group_id": {
+                            "type": "Pointer",
+                            "targetClass": "ProductGroup"
+                        },
+                        "art_nr": {
+                            "type": "String"
+                        },
+                        "image": {
+                            "type": "String"
+                        },
+                        "FU": {
+                            "type": "String"
+                        },
+                        "category_id": {
+                            "type": "Pointer",
+                            "targetClass": "ProductCategory"
+                        },
+                        "length_mm": {
+                            "type": "Number"
+                        },
+                        "desc_en": {
+                            "type": "String"
+                        },
+                        "label_en": {
+                            "type": "String"
+                        },
+                        "width_mm": {
+                            "type": "Number"
+                        },
+                        "thickness_mm": {
+                            "type": "Number"
+                        },
+                        "weight_kg": {
+                            "type": "Number"
+                        },
+                        "co2": {
+                            "type": "Number"
+                        },
+                        "RC": {
+                            "type": "Number"
+                        },
+                        "health": {
+                            "type": "Number"
+                        },
+                        "data_quality": {
+                            "type": "Number"
+                        },
+                        "iso_11654": {
+                            "type": "Number"
+                        },
+                        "iso_10848_2": {
+                            "type": "Number"
+                        },
+                        "iso_13501_1": {
+                            "type": "Number"
+                        },
+                        "heat_conduct": {
+                            "type": "Number"
+                        },
+                        "iso_13501": {
+                            "type": "Number"
+                        },
+                        "s_reduct_door": {
+                            "type": "Number"
+                        },
+                        "wind_material": {
+                            "type": "Number"
+                        },
+                        "iso_1077_12": {
+                            "type": "Number"
+                        },
+                        "iso_140_3": {
+                            "type": "Number"
+                        },
+                        "diameter_mm": {
+                            "type": "Number"
+                        },
+                        "abs_per_st": {
+                            "type": "Number"
+                        },
+                        "light_refl": {
+                            "type": "Number"
+                        },
+                        "keywords_sv": {
+                            "type": "String"
+                        },
+                        "keywords_en": {
+                            "type": "String"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Parameter",
+                "schema": {
+                    "properties": {
+                        "createdAt": {
+                            "type": "Date"
+                        },
+                        "updatedAt": {
+                            "type": "Date"
+                        },
+                        "import_id": {
+                            "type": "Number"
+                        },
+                        "key": {
+                            "type": "String"
+                        },
+                        "label_sv": {
+                            "type": "String"
+                        },
+                        "label_en": {
+                            "type": "String"
+                        },
+                        "type": {
+                            "type": "Number"
+                        },
+                        "unit": {
+                            "type": "String"
+                        },
+                        "category": {
+                            "type": "String"
+                        },
+                        "restriction": {
+                            "type": "String"
+                        },
+                        "enums_sv": {
+                            "type": "Array"
+                        },
+                        "enums_en": {
+                            "type": "Array"
+                        },
+                        "category_id": {
+                            "type": "Pointer",
+                            "targetClass": "ParameterCategory"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Index",
+                "schema": {
+                    "properties": {
+                        "createdAt": {
+                            "type": "Date"
+                        },
+                        "updatedAt": {
+                            "type": "Date"
+                        },
+                        "search_string": {
+                            "type": "String"
+                        },
+                        "referred_object_id": {
+                            "type": "String"
+                        },
+                        "object_class": {
+                            "type": "String"
+                        },
+                        "label": {
+                            "type": "String"
+                        },
+                        "manufacturer_label": {
+                            "type": "String"
+                        },
+                        "manufacturer_id": {
+                            "type": "Pointer",
+                            "targetClass": "Manufacturer"
+                        },
+                        "product_group_id": {
+                            "type": "Pointer",
+                            "targetClass": "ProductGroup"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "undefined",
+                "schema": {
+                    "properties": {
+                        "createdAt": {
+                            "type": "Date"
+                        },
+                        "updatedAt": {
+                            "type": "Date"
+                        },
+                        "word": {
+                            "type": "String"
+                        },
+                        "score": {
+                            "type": "Number"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Dictionary_sv",
+                "schema": {
+                    "properties": {
+                        "createdAt": {
+                            "type": "Date"
+                        },
+                        "updatedAt": {
+                            "type": "Date"
+                        },
+                        "score": {
+                            "type": "Number"
+                        },
+                        "word": {
+                            "type": "String"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Dictionary_en",
+                "schema": {
+                    "properties": {
+                        "createdAt": {
+                            "type": "Date"
+                        },
+                        "updatedAt": {
+                            "type": "Date"
+                        },
+                        "word": {
+                            "type": "String"
+                        },
+                        "score": {
+                            "type": "Number"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "Projects",
+                "schema": {
+                    "properties": {
+                        "createdAt": {
+                            "type": "Date"
+                        },
+                        "updatedAt": {
+                            "type": "Date"
+                        },
+                        "name": {
+                            "type": "String",
+                            "required": false
+                        },
+                        "items": {
+                            "type": "Array",
+                            "required": false,
+                            "defaultValue": []
+                        },
+                        "UserId": {
+                            "type": "Pointer",
+                            "targetClass": "_User",
+                            "required": false
+                        }
+                    }
+                }
+            },
+            {
+                "name": "ParameterCategory",
+                "schema": {
+                    "properties": {
+                        "createdAt": {
+                            "type": "Date"
+                        },
+                        "updatedAt": {
+                            "type": "Date"
+                        },
+                        "label_sv": {
+                            "type": "String"
+                        },
+                        "import_id": {
+                            "type": "Number"
+                        },
+                        "label_en": {
+                            "type": "String"
+                        }
+                    }
+                }
+            }
+        ],
+        "cloudservices": {
+            "instanceId": "cbfc3e6e-2204-7f50-0146-64100a3ea433",
+            "workspaceId": "carbonzero",
+            "endpoint": "http://localhost:1337/parse",
+            "appId": "cz-backend"
+        }
     }
 }
